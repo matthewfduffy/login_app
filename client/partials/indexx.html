@@ -1,7 +1,20 @@
-<!-- home -->
-<button ng-click="logout()">logout</button>
-<a href="/#!/create">Create a New Poll</a>
-<h1>Current Polls</h1>
+<style>
+    header{
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+    h2{display: inline;}
+    .float-right{float: right;}
+    input{float:right;}
+</style>
+<header>
+    <h2 class="page-header">Welcome</h2>
+    <div class="float-right">
+        <button ng-click="logout()">logout</button>
+        <button class="add-new"><a href="/#!/create">Create a New Poll</a></button></br>
+    </div>
+</header>
+<h2>Current Polls</h2>
 <input type="text" ng-model="search.$" placeholder="Search">
 <table>
   <thead>
