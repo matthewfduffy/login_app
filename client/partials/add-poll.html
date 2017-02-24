@@ -1,0 +1,25 @@
+<!-- create -->
+
+<a href="/#!/home">Cancel</a>
+<h1>Put the question and options here:</h1>
+
+<form ng-submit="addQuestion()">
+  <label>
+    Question: <input type='text' ng-model="poll.question">
+</label></br>
+  <label>
+    Option 1: <input type='text' ng-model="poll.option1">
+</label></br>
+  <label>
+    Option 2: <input type='text' ng-model="poll.option2">
+</label><br />
+  <label>
+    Option 3: <input type='text' ng-model="poll.option3">
+</label><br />
+  <label>
+    Option 4: <input type='text' ng-model="poll.option4">
+</label><br />
+  <input type='submit' value='Create Poll'>
+</form>
+
+<p ng-repeat="error in errors">{{error.message}}</p>

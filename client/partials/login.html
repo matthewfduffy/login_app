@@ -1,0 +1,8 @@
+<h2 class="page-header">Login</h2>
+<form ng-submit="addUser()">
+  <label>
+  Your Name: <input type='text' ng-model="user.username">
+  </label>
+  <input type='submit' value='Login'>
+</form>
+<p>{{error.username.message}}</p>
